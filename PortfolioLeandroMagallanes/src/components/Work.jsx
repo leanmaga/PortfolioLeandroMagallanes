@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 //img
 import Img1 from '../assets/muebles.png'
-import Img2 from '../assets/frank.png'
+import Img2 from '../assets/mockupsgym.jpg'
 import Img3 from '../assets/sele.png'
 
 const Work = () => {
@@ -54,11 +54,11 @@ const Work = () => {
               <img src={Img2} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
               {/*pretitle*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className='text-gradient'><a href="https://leanmaga.github.io/frank-ventas/" target="_blank" rel="noopener noreferrer">Web Site</a> </span>
+                <span className='text-gradient'><a href="https://leanmaga.github.io/personaltrainer/" target="_blank" rel="noopener noreferrer">Web Site</a> </span>
               </div>
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className='text-3x1 text-white '>Frank Ventas</span>
+                <span className='text-3x1 text-white '>Personal Trainer</span>
               </div>
             </div>
             {/*image*/}
