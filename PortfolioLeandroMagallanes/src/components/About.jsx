@@ -12,10 +12,6 @@ import Subtitle from './Subtitle';
 
 const About = () => {
 
-  //const [ref, inView] = useInView({
-    //threshold: 0.5,
-  //})
-
   const ref = useRef(null)
   const isInView = useInView(ref)
 

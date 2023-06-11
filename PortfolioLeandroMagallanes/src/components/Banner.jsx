@@ -1,7 +1,5 @@
 //images
 import Image from '../assets/me2.png';
-//type animation
-import { TypeAnimation } from 'react-type-animation';
 //motion
 import { motion } from 'framer-motion';
 //variants
@@ -9,6 +7,7 @@ import { fadeIn } from '../variants';
 
 import Buttons from './Buttons';
 import Subtitle from './Subtitle';
+import TypeText from './TypeText';
 
 const Banner = () => {
 
@@ -32,27 +31,7 @@ const Banner = () => {
             </motion.h1>
 
 
-            <motion.div 
-            variants={fadeIn('up', 0.4)} 
-            initial='hidden' 
-            whileInView={'show'} 
-            viewport={{once: false, amount: 0.7}} 
-            className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>I am a</span>
-              <TypeAnimation sequence={[
-                'Developer',
-                2000,
-                'Designer',
-                2000,
-                'Product Manager',
-                2000,
-              ]}
-              speed={50}
-              className='text-accent'
-              wrapper='span'
-              repeat={Infinity}
-              />
-            </motion.div>
+            <TypeText/>
 
             <Subtitle propData={data}/>
 
