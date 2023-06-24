@@ -8,7 +8,6 @@ import { fadeIn } from '../variants';
 import Buttons from './Buttons';
 import Subtitle from './Subtitle';
 import TypeText from './TypeText';
-
 const Banner = () => {
 
   const data = 'Front-End Developer specializing in React, JavaScript, CSS, and HTML. Crafting immersive web experiences with a keen eye for detail.'
@@ -29,6 +28,7 @@ const Banner = () => {
             className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
               Leandro <span>Magallanes</span>
             </motion.h1>
+            
 
 
             <TypeText/>
@@ -61,6 +61,7 @@ const Banner = () => {
           initial='hidden' 
           whileInView={'show'} 
           className=' flex-1 max-w-[320px] lg:max-w-[482px]'>
+            
             <div className='figure bg-contain bg-no-repeat'><img src={Image} alt='me' /></div>
             
           </motion.div>

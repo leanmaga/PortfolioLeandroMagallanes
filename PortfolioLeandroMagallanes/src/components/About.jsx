@@ -10,6 +10,10 @@ import {fadeIn} from '../variants'
 import { useRef } from 'react';
 import Subtitle from './Subtitle';
 
+
+import LottieNotebook from './LottieNotebook';
+
+
 const About = () => {
 
   const ref = useRef(null)
@@ -33,7 +37,8 @@ const About = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}  
-              className='flex-1 bg-about bg-contain bg-no-repeat hidden md:block lg:block h-[640px] mix-blend-lighten bg-top md:h-[380px] '>
+              className='flex-1  bg-contain bg-no-repeat hidden md:block lg:block h-[520px] bg-top md:h-[500px] '>
+                <LottieNotebook/>
             </motion.div>
 
             {/*text*/}
