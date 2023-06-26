@@ -30,8 +30,8 @@ const servicesGroupTwo = [
 ]
 const Services = () => {
   return (
-    <section className='flex items-center pt-8' id='services'>
-      <div className="container mx-auto xs:m-0 xs:p-0 xs:text-center xs:items-center">
+    <section className='flex items-center  pt-8 xs:mt-8 sm:mt-8' id='services'>
+      <div className="md:container lg:container mx-auto xs:m-0 xs:p-0 xs:text-center xs:items-center">
         <div className='flex  justify-center items-center text-center'>
           {/*text and img*/}
 
@@ -40,8 +40,8 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}  
-          className='flex-1 m-12 justify-center text-center items-center'>
-            <h2 className="h2 text-accent mb-6">What I Do.</h2>
+          className='flex-1 my-12 justify-center text-center items-center'>
+            <h2 className="h2 text-accent my-6">What I Do.</h2>
             <h3 className='h3 xs:h4 mb-16'>I´m a Freelance Front-end Developer with over 3 years of experience.</h3>
             <button className="btn btn-sm"><a href="http://github.com/leanmaga" target="_blank" rel="noreferrer"> See my work</a></button>
           </motion.div>
@@ -49,7 +49,7 @@ const Services = () => {
           
         </div>
 
-        <div className='flex justify-center items-center text-center'>
+        <div className='flex md:flex-row lg:flex.ror xs:flex-col sm:flex-col justify-center items-center text-center my-8'>
 
           {/*services*/}
 

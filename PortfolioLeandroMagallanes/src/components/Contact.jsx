@@ -13,7 +13,7 @@ const Contact = () => {
     if (state.succeeded) {
         return(
             <section className='py-16 lg:section' id='contact'>
-                <div className="container mx-auto xs:text-center xs:items-center">
+                <div className="container xs:text-center xs:items-center">
                     <div className='flex flex-col lg:flex-row'>
                         {/*text*/}
                         <motion.div
@@ -43,9 +43,9 @@ const Contact = () => {
     }
 
   return (
-    <section className='py-16 lg:section' id='contact'>
-        <div className="container mx-auto xs:text-center xs:items-center">
-            <div className='flex flex-col lg:flex-row'>
+    <section className='py-16 section' id='contact'>
+        <div className="container xs:text-center xs:items-center">
+            <div className='flex flex-col lg:flex-row justify-center items-center text-center '>
                 {/*text*/}
                 <motion.div
                 variants={fadeIn('right', 0.3)} 
@@ -66,7 +66,7 @@ const Contact = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}  
-                className='flex-1 border rounded-2x1 flex flex-col gap-y-6 pb-16 md:pb-12 p-6 items-start '>
+                className='flex-1 border min-w-[400px] max-w-[400px] rounded-2x1 flex flex-col gap-y-6 pb-16 md:pb-12 p-6 items-start'>
                     <input
                     required
                     id="name"
