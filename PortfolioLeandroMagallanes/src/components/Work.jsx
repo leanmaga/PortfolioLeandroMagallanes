@@ -10,7 +10,7 @@ import Img3 from '../assets/sele.png'
 const Work = () => {
   return (
     <section className='section mt-8 pt-8' id='work'>
-      <div className="container mx-auto xs:text-center xs:items-center">
+      <div className="container mx-auto xs:text-center xs:items-center h-full">
         <div className='flex flex-col lg:flex-row gap-x-10 md:m-10'>
           <motion.div 
           variants={fadeIn('left', 0.2)} 

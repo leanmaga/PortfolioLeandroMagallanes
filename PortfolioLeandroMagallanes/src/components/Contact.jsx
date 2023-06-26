@@ -52,8 +52,8 @@ const Contact = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }} 
-                className='py-8 flex-1 flex justify-start items-center xs:text-center xs:justify-center'>
-                    <div>
+                className='py-8 flex-1 flex justify-center items-center text-center'>
+                    <div className='flex justify-center items-center text-center flex-col' >
                         <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
                         <h2 className='text-[45px] lg:text-[90px] leading-none mb-12 '>Let´s work <br />together!</h2>
                         <Redes/>
