@@ -13,8 +13,8 @@ const TypeText = () => {
             initial='hidden' 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>I am a</span>
+            className='pt-4 pb-4 text-[24px] md:text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]'>
+              <span className='text-white mr-4 '>I am a</span>
               <TypeAnimation sequence={[
                 'Developer',
                 2000,

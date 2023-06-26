@@ -8,14 +8,18 @@ import { fadeIn } from '../variants';
 import Buttons from './Buttons';
 import Subtitle from './Subtitle';
 import TypeText from './TypeText';
+
 const Banner = () => {
 
   const data = 'Front-End Developer specializing in React, JavaScript, CSS, and HTML. Crafting immersive web experiences with a keen eye for detail.'
   
   return ( 
     <section className='flex py-8 items-center' id='home'>
+
       <div className='container mx-auto'>
+
         <div className='flex flex-col lg:flex-row lg:items-center lg:gap-x-12'>
+          
           {/*text*/}
           <div className='flex-1 text-center font-secondary lg:text-left pb-8'>
 
@@ -25,12 +29,11 @@ const Banner = () => {
             initial='hidden' 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
+            className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'
+            >
               Leandro <span>Magallanes</span>
             </motion.h1>
             
-
-
             <TypeText/>
 
             <Subtitle propData={data}/>
@@ -60,13 +63,16 @@ const Banner = () => {
           variants={fadeIn('down', 0.5)} 
           initial='hidden' 
           whileInView={'show'} 
-          className=' flex-1 max-w-[320px] lg:max-w-[482px]'>
+          className=' flex-1 max-w-[320px] lg:max-w-[482px] container-img'>
             
             <div className='figure bg-contain bg-no-repeat'><img src={Image} alt='me' /></div>
             
           </motion.div>
+
         </div>
+
       </div>
+
     </section>
   );
 };

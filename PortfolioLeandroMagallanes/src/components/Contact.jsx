@@ -13,7 +13,7 @@ const Contact = () => {
     if (state.succeeded) {
         return(
             <section className='py-16 lg:section' id='contact'>
-                <div className="container mx-auto">
+                <div className="container mx-auto xs:text-center xs:items-center">
                     <div className='flex flex-col lg:flex-row'>
                         {/*text*/}
                         <motion.div
@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <section className='py-16 lg:section' id='contact'>
-        <div className="container mx-auto">
+        <div className="container mx-auto xs:text-center xs:items-center">
             <div className='flex flex-col lg:flex-row'>
                 {/*text*/}
                 <motion.div
@@ -52,7 +52,7 @@ const Contact = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }} 
-                className='flex-1 flex justify-start items-center'>
+                className='py-8 flex-1 flex justify-start items-center xs:text-center xs:justify-center'>
                     <div>
                         <h4 className='text-x1 uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
                         <h2 className='text-[45px] lg:text-[90px] leading-none mb-12 '>Let´s work <br />together!</h2>

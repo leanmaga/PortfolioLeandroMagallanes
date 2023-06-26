@@ -26,7 +26,7 @@ const About = () => {
     <>
       <section id='about' className='section' ref={ref}>
 
-      <div className='container mx-auto'>
+      <div className='container mx-auto xs:text-center xs:items-center'>
 
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
 
@@ -37,7 +37,7 @@ const About = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}  
-              className='flex-1  bg-contain bg-no-repeat hidden md:block lg:block h-[520px] bg-top md:h-[500px] '>
+              className='flex-1 order-1 xs:order-2 bg-contain bg-no-repeat h-[520px] bg-top md:h-[500px] '>
                 <LottieNotebook/>
             </motion.div>
 
@@ -48,40 +48,42 @@ const About = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}
-              className="flex-1">
+              className="flex-1 order-2 xs:order-1">
 
                 <h2 className='h2 text-accent'>About me.</h2>
-                <h3 className='h3 mb-4'>I am a Freelance Front-end Developer with over 3 years of experience.</h3>
+                <h3 className='xs:h4 mb-4 xs:text-'>I am a Freelance Front-end Developer with over 3 years of experience.</h3>
                 
                 <Subtitle propData={data}/>
                 
                 {/*stats*/}
 
-                <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+                <div className='flex justify-center gap-x-6 lg:gap-x-10 mb-12 text-center items-center'>
+
                   <div className='mb-4'>
-                    <div className='text-[40px] font-tertiary text-gradient mt-4 mb-2'>
+                    <div className='xs:text-[30px] text-[40px] font-tertiary text-gradient mt-4 mb-2'>
                       { isInView ?
                           <CountUp start={0} end={3} duration={3}/> : null
                       }+
                     </div>
-                    <div className='font-primary text-sm tracking-[2px]'>Years of <br/> experience</div>
+                    <div className='font-primary text-xs tracking-[2px]'>Years of <br/> experience</div>
                   </div>
                   <div className='mb-4'>
-                    <div className='text-[40px] font-tertiary text-gradient mt-4  mb-2'>
+                    <div className='xs:text-[30px] text-[40px] font-tertiary text-gradient mt-4  mb-2'>
                       { isInView ?
                           <CountUp start={0} end={30} duration={3}/> : null
                       }+
                     </div>
-                    <div className='font-primary text-sm tracking-[2px]'>Projects <br/> completed</div>
+                    <div className='font-primary text-xs tracking-[2px]'>Projects <br/> completed</div>
                   </div>
                   <div className='mb-4'>
-                    <div className='text-[40px] font-tertiary text-gradient mt-4 mb-2'>
+                    <div className='xs:text-[30px] text-[40px] font-tertiary text-gradient mt-4 mb-2'>
                       { isInView ?
                           <CountUp start={0} end={20} duration={3}/> : null
                       }+
                     </div>
-                    <div className='font-primary text-sm tracking-[2px]'>Satisfied <br/> Clients</div>
+                    <div className='font-primary text-xs tracking-[2px]'>Satisfied <br/> Clients</div>
                   </div>
+
                 </div>
 
 

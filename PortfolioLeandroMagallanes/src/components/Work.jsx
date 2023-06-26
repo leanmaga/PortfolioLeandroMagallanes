@@ -9,8 +9,8 @@ import Img3 from '../assets/sele.png'
 
 const Work = () => {
   return (
-    <section className='section' id='work'>
-      <div className="container mx-auto">
+    <section className='section mt-8 pt-8' id='work'>
+      <div className="container mx-auto xs:text-center xs:items-center">
         <div className='flex flex-col lg:flex-row gap-x-10 md:m-10'>
           <motion.div 
           variants={fadeIn('left', 0.2)} 
@@ -45,7 +45,7 @@ const Work = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}  
-          className='flex-1 flex flex-col gap-y-10 md:m-16'>
+          className='flex-1 flex flex-col gap-y-10 md:m-16 xs:mt-10'>
             {/*image*/}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/*overlay*/}
@@ -62,7 +62,7 @@ const Work = () => {
               </div>
             </div>
             {/*image*/}
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            <div className=' group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/*overlay*/}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/*img*/}

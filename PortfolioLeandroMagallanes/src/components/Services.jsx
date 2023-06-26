@@ -28,8 +28,8 @@ const services = [
 ]
 const Services = () => {
   return (
-    <section className='flex items-center' id='services'>
-      <div className="container mx-auto">
+    <section className='flex items-center pt-8' id='services'>
+      <div className="container mx-auto xs:m-0 xs:p-0 xs:text-center xs:items-center">
         <div className='flex flex-col lg:flex-row'>
           {/*text and img*/}
 
@@ -40,7 +40,7 @@ const Services = () => {
           viewport={{ once: false, amount: 0.3 }}  
           className='flex-1 lg:bg-services lg:bg-bootom bg-no-repeat mix-blend-lighten m-12 lg:mb-0 '>
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>I´m a Freelance Front-end Developer with over 3 years of experience.</h3>
+            <h3 className='h3 xs:h4 max-w-[455px] mb-16'>I´m a Freelance Front-end Developer with over 3 years of experience.</h3>
             <button className="btn btn-sm"><a href="http://github.com/leanmaga" target="_blank" rel="noreferrer"> See my work</a></button>
           </motion.div>
 

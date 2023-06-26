@@ -33,7 +33,27 @@ body {
   top: -100px;
   left: 0;
 }
+.container-img{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
 
+@media (max-width: 768px) {
+  .figure {
+    width:200px;
+    height:200px;
+  }
+  .figure img{
+    width:300px;
+    height: auto;
+    top: -50px;
+  }
+  
+}
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -82,6 +102,9 @@ body {
   }
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .h4{
+    @apply font-primary font-semibold text-[18px] mb-6 leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;

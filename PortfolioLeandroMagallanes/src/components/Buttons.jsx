@@ -8,7 +8,7 @@ const Buttons = () => {
             <a href="#contact">Contact me</a>
         </button>
         <a className='text-gradient btn-link' href={CV} download='Leandro Magallanes Curriculum Vitae'>
-            My Curriculum Vitae
+            My Curriculum
         </a>
     </>
   )

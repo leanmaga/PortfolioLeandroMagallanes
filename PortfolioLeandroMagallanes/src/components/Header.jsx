@@ -15,7 +15,7 @@ const Header = () => {
         
 
         {/*button*/}
-        <button className='btn btn-sm'><a href='#contact'>Work with me</a></button>
+        <button className='btn btn-sm xs:hidden sm:hidden'><a href='#contact'>Work with me</a></button>
       </div>
     </div>
   </header>
