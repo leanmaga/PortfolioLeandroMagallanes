@@ -6,10 +6,12 @@ import { fadeIn } from '../variants'
 import Img1 from '../assets/muebles.png'
 import Img2 from '../assets/mockupsgym.jpg'
 import Img3 from '../assets/sele.png'
+import Img4 from '../assets/stitch.jpg'
+import Img5 from '../assets/chat.png'
 
 const Work = () => {
   return (
-    <section className='section mt-8 pt-8' id='work'>
+    <section className='section h-[170vh] mt-8 pt-8' id='work'>
       <div className="container mx-auto xs:text-center xs:items-center h-full">
         <div className='flex flex-col lg:flex-row gap-x-10 md:m-10'>
           <motion.div 
@@ -37,6 +39,21 @@ const Work = () => {
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className='text-3x1 text-white '>Fábrica de Muebles</span>
+              </div>
+            </div>
+            {/*image*/}
+            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/*overlay*/}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/*img*/}
+              <img src={Img5} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
+              {/*pretitle*/}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <span className='text-gradient'><a href="https://leanmaga.github.io/gpt3LandingPage/" target="_blank" rel="noopener noreferrer">Web Site</a></span>
+              </div>
+              {/*title*/}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className='text-3x1 text-white '>Chat GPT</span>
               </div>
             </div>
           </motion.div>
@@ -74,6 +91,21 @@ const Work = () => {
               {/*title*/}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className='text-3x1 text-white '>Sele-Style</span>
+              </div>
+            </div>
+            {/*image*/}
+            <div className=' group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/*overlay*/}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/*img*/}
+              <img src={Img4} alt="portfoliowork1" className='group-hover:scale-125 transition-all duration-500'/>
+              {/*pretitle*/}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <span className='text-gradient'><a href="https://leanmaga.github.io/Artesanias-Stitch/" target="_blank" rel="noopener noreferrer">Catálogo virtual</a></span>
+              </div>
+              {/*title*/}
+              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className='text-3x1 text-white '>Artesanias-Stitch</span>
               </div>
             </div>
 
